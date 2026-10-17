@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:all": "turbo run dev",
+    "build:all": "turbo run build",
+    "dev:web": "pnpm --filter @mern/web dev",
+    "dev:admin": "pnpm --filter @mern/admin dev",
+    "dev:backend": "pnpm --filter @mern/backend dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.14.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "turbo": "^2.11.8"
+  }
+}
